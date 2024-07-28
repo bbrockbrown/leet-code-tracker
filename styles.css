@@ -1,0 +1,83 @@
+:root {
+    --tracking-border-color: rgb(255, 159, 213);
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+head {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    overflow: hidden;
+    font-size: 90%;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+#header {
+    font-size: 48px;
+}
+
+.tracking-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.todo-tracking, .completed-tracking {
+    border: 2px solid var(--tracking-border-color);
+    border-radius: 4px;
+    font-size: 32px;
+    text-align: center;
+    box-shadow: 8px rgb(255, 159, 213, 0.8);
+    height: 200px;
+    width: 350px;
+    padding: 8px;
+}
+
+.todo-tracking:hover, .completed-tracking:hover {
+    filter: brightness(85%);
+}
+
+/* progress bar fills more as more complete */
+.progressbar {
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(255, 212, 236);
+    margin: 10px auto;
+    --angle: 0deg;
+    /* FOR FUTURE: make it so user can change border gradient */
+    --very-pink: rgb(249, 0, 141);
+    --pink: rgb(233, 58, 183); 
+    --pinkish-purple: rgb(233, 58, 210); 
+    --magenta: magenta;
+    --purple: rgb(213, 58, 233); 
+    --very-purple: rgb(212, 0, 255); 
+	border: 3px solid;
+	border-image: conic-gradient(from var(--angle), var(--very-pink), var(--pink), var(--pinkish-purple), var(--magenta), var(--purple), var(--very-purple), var(--very-pink)) 1;
+	animation: 4s rotate linear infinite;
+}
