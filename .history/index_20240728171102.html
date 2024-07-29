@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script>src="script.js"</script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="header">Leet Code Problem Tracker</h1>
+    </div>
+    
+    <div class="tracking-container">
+        <!-- Have some script grab random leet code problems daily -->
+        <div class="todo-tracking">
+            <div class="todo-percent">--%</div>
+            <div class="progressbar" id="todo-bar"> <!--% Container for progressbar --> </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <!-- Brings to page with links to completed problems, area to write 
+         notes about how it was solved, topics used, etc-->
+        <div class="completed-tracking">
+            <div class="completed-percent">--%</div>
+            <div class="progressbar" id="completed-bar"> <!--% Container for progressbar --> </div>
+            <div class="completed-problem-container">
+                <div class="question"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

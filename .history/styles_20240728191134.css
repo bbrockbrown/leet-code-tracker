@@ -107,7 +107,7 @@ body {
     --magenta: magenta;
     --purple: rgb(213, 58, 233); 
     --very-purple: rgb(212, 0, 255); 
-	border: 3px solid;
+	border: 20 px solid;
 	border-image: conic-gradient(from var(--angle), var(--very-pink), var(--pink), var(--pinkish-purple), var(--magenta), var(--purple), var(--very-purple), var(--very-pink)) 1;
 	animation: 4s rotate linear infinite;
 }

@@ -35,14 +35,16 @@ body {
 }
 
 .main {
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
-    overflow: hidden;
 }
 
 #header {
     font-size: 48px;
-    overflow: hidden;
+    flex: none;
 }
 
 .tracking-titles {

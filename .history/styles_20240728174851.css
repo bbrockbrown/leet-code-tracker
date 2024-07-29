@@ -42,7 +42,7 @@ body {
 
 #header {
     font-size: 48px;
-    overflow: hidden;
+    flex: none;
 }
 
 .tracking-titles {

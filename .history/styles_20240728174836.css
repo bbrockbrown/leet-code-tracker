@@ -37,12 +37,11 @@ body {
 .main {
     text-align: center;
     padding: 24px;
-    overflow: hidden;
 }
 
 #header {
     font-size: 48px;
-    overflow: hidden;
+    flex: none;
 }
 
 .tracking-titles {

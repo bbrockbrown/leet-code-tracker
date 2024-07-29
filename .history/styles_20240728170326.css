@@ -14,12 +14,6 @@
   inherits: false;
 }
 
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
 head {
     display: none;
 }
@@ -35,39 +29,23 @@ body {
 }
 
 .main {
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
-    overflow: hidden;
 }
 
 #header {
     font-size: 48px;
-    overflow: hidden;
-}
-
-.tracking-titles {
-    display: flex;
-    padding: 8px;
-    justify-content: space-around;
 }
 
 .tracking-container {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
-    height: 100%;
-}
-
-.tracking-box {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tracking-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #f4f4f4;
+    width: 300px;
 }
 
 .todo-tracking, .completed-tracking {
@@ -76,16 +54,9 @@ body {
     font-size: 32px;
     text-align: center;
     box-shadow: 8px rgb(255, 159, 213, 0.8);
-    height: 100%;
-    width: 1000px;
+    height: 200px;
+    width: 350px;
     padding: 8px;
-    background-color: #333;
-    margin: 10px auto;
-    display: inline-block;
-    max-width: 75%;
-    max-height: 85%;
-    overflow-y: auto;
-    color: #f4f4f4;
 }
 
 .todo-tracking:hover, .completed-tracking:hover {
@@ -110,57 +81,4 @@ body {
 	border: 3px solid;
 	border-image: conic-gradient(from var(--angle), var(--very-pink), var(--pink), var(--pinkish-purple), var(--magenta), var(--purple), var(--very-purple), var(--very-pink)) 1;
 	animation: 4s rotate linear infinite;
-}
-
-table {
-    width: 90%;
-    display: table;
-    margin: 15px auto;
-    border-collapse: collapse;
-    transition: box-shadow 0.3s ease-in-out;
-    border: 2px solid var(--tracking-border-color);
-    border-radius: 10px;
-    box-shadow: #1e1e1e;
-}
-
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    unicode-bidi: isolate;
-    border-color: inherit;
-    font-size: 15px;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    unicode-bidi: isolate;
-    border-color: inherit;
-}
-
-th {
-    color: white;
-    text-transform: uppercase;
-    background-color: #373a37;
-}
-
-th:first-child, td:first-child {
-    text-align: left;
-}
-
-th, td {
-    padding: 8px 14px;
-    transition: background-color 0.5s;
-    height: 28px;
-    border: 0px;
-    white-space: nowrap;
-}
-
-a {
-    text-decoration:underline;
-    color: inherit;
-}
-
-a:visited {
-    color: rgb(173, 173, 173);
 }
