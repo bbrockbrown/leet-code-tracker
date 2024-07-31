@@ -62,7 +62,6 @@ body {
 .tracking-box {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -170,11 +169,6 @@ a:visited {
 
 button {
     border: 3px solid var(--tracking-border-color);
-    border-radius: 4px;
-    background-color: #f4f4f4;
-}
-
-#add-problem-button {
-    width: 33%;
-    height: auto;
+    border-radius: inherit;
+    background-color: inherit;
 }
