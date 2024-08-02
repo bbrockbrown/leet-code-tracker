@@ -3,11 +3,11 @@ add_problem_button.addEventListener("click", function() {
 });
 
 close_popup.addEventListener("click", function() {
-    add-todo-problem.classList.remove("show");
+    popup.classList.remove("show");
 });
 
 window.addEventListener("click", function (event) {
-    if (event.target == add-todo-problem) {
-        add-todo-problem.classList.remove("show");
+    if (event.target == popup) {
+        popup.classList.remove("show");
     }
 });
